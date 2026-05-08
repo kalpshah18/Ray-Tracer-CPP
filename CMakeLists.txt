@@ -7,6 +7,7 @@ enable_testing()
 add_executable(RayTracer 
     src/main.cpp
     src/vec3.h
-    src/color.h)
+    src/color.h
+    src/ray.h)
 
 set_property(TARGET RayTracer PROPERTY CXX_STANDARD 17)
