@@ -8,6 +8,12 @@ add_executable(RayTracer
     src/main.cpp
     src/vec3.h
     src/color.h
-    src/ray.h)
+    src/ray.h
+    src/hittable.h
+    src/sphere.h
+    src/hittable_list.h
+    src/constants_and_imports.h
+    src/interval.h
+    src/camera.h)
 
 set_property(TARGET RayTracer PROPERTY CXX_STANDARD 17)
