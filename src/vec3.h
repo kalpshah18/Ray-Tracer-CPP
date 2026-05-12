@@ -48,6 +48,11 @@ class vec3 {
         static vec3 random(double min, double max) {
             return vec3(random_double(min, max), random_double(min, max), random_double(min, max));
         }
+
+        bool near_zero() const {
+            auto s = 1e-8;
+            return (std::fabs(e[0]) < s) && (std::fabs(e[1]) < s) && (std::fabs(e[2]) < s);
+        }
 };
 
 // point3 is an alias for vec3, representing a point in 3D space

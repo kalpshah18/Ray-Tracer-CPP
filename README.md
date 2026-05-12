@@ -1,5 +1,9 @@
 # Building a Basic Ray Tracing System with C++
 
-This project is a simple implementation of a ray tracer in C++. The goal is to create a program that can generate images by simulating the path of light as pixels in an image plane and its effects on the surfaces of virtual objects.
+This project implements a basic ray tracing engine in C++ that simulates light rays to render 3D scenes. It features support for spheres, various materials (diffuse, metal, dielectric), and generates high-quality images through accurate light simulation.
 
-The output of this ray tracer will be an image in the PPM (Portable Pixmap) format.
+The ray tracer outputs images in the PPM (Portable Pixmap) format, which can be viewed with standard image viewers or converted to other formats.
+
+## Sample Output
+
+![Sample Image](SampleImage.png)

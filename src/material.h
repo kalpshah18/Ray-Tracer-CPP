@@ -1,0 +1,16 @@
+#ifndef MATERIAL_H
+#define MATERIAL_H
+
+#include "constants_and_imports.h"
+#include "hittable.h"
+
+class material {
+  public:
+    virtual ~material() = default;
+
+    virtual bool scatter(const ray& r_in, const hit_record& rec, color& attenuation, ray& scattered) const {
+        return false;
+    }
+};
+
+#endif
